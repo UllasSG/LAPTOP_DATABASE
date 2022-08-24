@@ -7,6 +7,13 @@ const graphicsBtn=document.getElementById('graphics-btn')
 const priceBtn=document.getElementById('price-btn')
 const secondRowBtn=document.getElementById("2button-div")
 //------------------------------------------------------------------------------------------------------------------------------------
+const companyChoice=document.getElementById('company-choice')
+const cpuChoice=document.getElementById('cpu-choice')
+const ramChoice=document.getElementById('ram-choice')
+const screenChoice=document.getElementById('screen-choice')
+const graphicsChoice=document.getElementById('graphics-choice')
+const priceChoice=document.getElementById('price-choice')
+//------------------------------------------------------------------------------------------------------------------------------------
 let companyName=' '
 let cpuName=' '
 let ramSize=0
@@ -74,33 +81,43 @@ companyBtn.addEventListener('click',function(){
     const ASUSCompany=document.getElementById('ASUS')
     HPCompany.addEventListener('click',function(){
         companyName='HP'
+        companyChoice.innerHTML='HP'
     })
     MSICompany.addEventListener('click',function(){
         companyName='MSI'
+        companyChoice.innerHTML='MSI'
     })
     MICompany.addEventListener('click',function(){
         companyName='Mi '
+        companyChoice.innerHTML='Mi'
     })
     RazerCompany.addEventListener('click',function(){
         companyName='Razer'
+        companyChoice.innerHTML='Razer'
     })
     AppleCompany.addEventListener('click',function(){
         companyName='Apple'
+        companyChoice.innerHTML='Apple'
     })
     AcerCompany.addEventListener('click',function(){
         companyName='Acer'
+        companyChoice.innerHTML='Acer'
     })
     DellCompany.addEventListener('click',function(){
         companyName='Dell'
+        companyChoice.innerHTML='Dell'
     })
     LenovoCompany.addEventListener('click',function(){
         companyName='Lenovo'
+        companyChoice.innerHTML='Lenovo'
     })
     LGCompany.addEventListener('click',function(){
         companyName='LG'
+        companyChoice.innerHTML='LG'
     })
     ASUSCompany.addEventListener('click',function(){
         companyName='ASUS'
+        companyChoice.innerHTML='ASUS'
     })
 
 })
@@ -418,14 +435,17 @@ let data=[['HP 15 Thin & Light', 'Ryzen 3 3250U', 8, 15.6, 'i .', 35999],
 //         console.log(data[i])
 //     }
 // }
+const showBtn=document.getElementById('btn')
+const resultTable=document.getElementById("result-table")
 let outputArray=[]
 const submitBtn=document.getElementById('submit-btn')
 const displayResults=document.getElementById('results')
 submitBtn.addEventListener('click',function(){
+    showBtn.style.opacity='100%'
 
     for (let i=0; i<data.length ; i++){
         if (data[i][0].indexOf(companyName)>-1 && data[i][1].indexOf(cpuName)>-1 && data[i][2]>=ramSize  && data[i][3]>=screenSize && data[i][4].indexOf(graphicsType)>-1 && data[i][5]<=budget){
-            displayResults.innerText+=JSON.stringify(data[i])
+            outputArray.push(data[i])
         }
     }
     companyName=' '
@@ -434,5 +454,52 @@ submitBtn.addEventListener('click',function(){
     screenSize=0
     graphicsType=' '
     budget=1000000
+    
 })
+
+showBtn.addEventListener('click',function(){
+    const TableEl=document.getElementById('table-el')
+    TableEl.innerHTML=`
+      <tr>
+          <th>Name</th>
+          <th>CPU</th>
+          <th>RAM</th>
+          <th>Screen</th>
+          <th>Graphics</th>
+          <th>Price</th>
+      </tr>
+    `
+    // const TableEl=document.getElementById('table-el')
+    for (let i=0; i<outputArray.length ;i++){
+        htmlCode=`
+    
+        <tr>
+        <td>${outputArray[i][0]}</td>
+        <td>${outputArray[i][1]}</td>
+        <td>${outputArray[i][2]}</td>
+        <td>${outputArray[i][3]}</td>
+        <td>${outputArray[i][4]}</td>
+        <td>${outputArray[i][5]}</td>
+        </tr>`
+        TableEl.innerHTML+=htmlCode
+    
+    }
+})
+// const TableEl=document.getElementById('table-el')
+// for (let i=0; i<outputArray.length ;i++){
+//     htmlCode=`
+
+//     <tr>
+//     <td>${data[i][0]}</td>
+//     <td>${data[i][1]}</td>
+//     <td>${data[i][2]}</td>
+//     <td>${data[i][3]}</td>
+//     <td>${data[i][4]}</td>
+//     <td>${data[i][5]}</td>
+//     </tr>`
+//     TableEl.innerHTML+=htmlCode
+
+// }
+
+
 

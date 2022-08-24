@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/choices.css">
   <link rel="stylesheet" href="CSS/2ndrowbuttons.css">
+  <link rel="stylesheet" href="CSS/tablestyle.css">
   
 </head>
 <body style="background-color: rgb(18, 18, 19);
@@ -19,6 +20,14 @@
       <img class="logo" src="LOGOS/logodark2.png">
     </div><!--logodiv-->
   </div><!--header-->
+  <div class="notifyChoice">
+    <div class="ch" id="company-choice"></div>
+    <div class="ch" id="cpu-choice"></div>
+    <div class="ch" id="ram-choice"></div>
+    <div class="ch" id="scren-choice"></div>
+    <div class="ch" id="graphics-choice"></div>
+    <div class="ch" id="price-choice"></div>
+  </div>
   <div class="choices">
     <div><button id="company-btn">COMPANY</button></div>
     <div><button id="cpu-btn">CPU</button></div>
@@ -34,7 +43,9 @@
   <div id="submit">
     <button id="submit-btn">SUBMIT</button>
   </div>
-  <div style="color: white;" id="results">fsdfsa
+  <div style="color: white;" id="result-table">
+    <button id="btn">SHOW RESULTS</button>
+    <table id='table-el' class="TABLE"></table>
   </div>
   <script src="index.js"></script>
 </body>

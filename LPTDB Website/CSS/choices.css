@@ -1,4 +1,5 @@
-.choices{
+.choices,
+.notifyChoice{
   display: flex;
   width: 1000px;
   
@@ -12,7 +13,8 @@
 #ram-btn,
 #screen-btn,
 #graphics-btn,
-#price-btn{
+#price-btn
+{
   height: 60px;
   width: 150px;
   color: white;
@@ -30,4 +32,17 @@ button:hover{
   color: #00acacfe;
   border-color: rgb(255, 0, 0);
   
+}
+.ch{
+  color: white;
+  border: 2px solid rgb(25, 170, 186);
+  height: 40px;
+  width: 140px;
+  margin-bottom: -5px;
+  border-radius: 10px;
+  text-align: center;
+  opacity: 70%;
+  border-bottom: none;
+  font-family: Kanit;
+
 }
