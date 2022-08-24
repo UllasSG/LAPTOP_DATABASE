@@ -107,30 +107,95 @@ companyBtn.addEventListener('click',function(){
 //------------------------------------------------------------------------------------------------------------------------------------
 cpuBtn.addEventListener('click',function(){
     secondRowBtn.innerHTML=cpuHtml
+    const inteli3=document.getElementById("i3")
+    const inteli5=document.getElementById("i5")
+    const inteli7=document.getElementById("i7")
+    const inteli9=document.getElementById("i9")
+    const ryzenR3=document.getElementById("R3")
+    const ryzenR5=document.getElementById("R5")
+    const ryzenR7=document.getElementById("R7")
+    inteli3.addEventListener('click',function(){
+        cpuName='i3'
+    })
+    inteli5.addEventListener('click',function(){
+        cpuName='i5'
+    })
+    inteli7.addEventListener('click',function(){
+        cpuName='i7'
+    })
+    inteli9.addEventListener('click',function(){
+        cpuName='i9'
+    })
+    ryzenR3.addEventListener('click',function(){
+        cpuName='R3'
+    })
+    ryzenR5.addEventListener('click',function(){
+        cpuName='R5'
+    })
+    ryzenR7.addEventListener('click',function(){
+        cpuName='R7'
+    })
 })
 //------------------------------------------------------------------------------------------------------------------------------------
 ramBtn.addEventListener('click',function(){
     secondRowBtn.innerHTML=ramHtml
+    const fourRam=document.getElementById('fourGB')
+    const eightRam=document.getElementById('eightGB')
+    const sixteenRam=document.getElementById('sixteenGB')
+    const thritytwoRam=document.getElementById('thirtytwoGB')
+    fourRam.addEventListener('click',function(){
+        ramSize=4
+    })
+    eightRam.addEventListener('click',function(){
+        ramSize=8
+    })
+    sixteenRam.addEventListener('click',function(){
+        ramSize=16
+    })
+    thritytwoRam.addEventListener('click',function(){
+        ramSize=32
+    })
 })
+
 //------------------------------------------------------------------------------------------------------------------------------------
 screenBtn.addEventListener('click',function(){
     secondRowBtn.innerHTML=screenHtml
+    const thirteenInches=document.getElementById("thirteenIn")
+    const fourteenInches=document.getElementById("fourteenIn")
+    const sixteenInches=document.getElementById("sixteenIn")
+    const seventeenInches=document.getElementById("seventeenIn")
+    thirteenInches.addEventListener('click',function(){
+        screenSize=13
+    })
+    fourteenInches.addEventListener('click',function(){
+        screenSize=14
+    })
+    sixteenInches.addEventListener('click',function(){
+        screenSize=16
+    })
+    seventeenInches.addEventListener('click',function(){
+        screenSize=17
+    })
 })
 //------------------------------------------------------------------------------------------------------------------------------------
 graphicsBtn.addEventListener('click',function(){
     secondRowBtn.innerHTML=graphicsHtml
+    const integratedGraphics=document.getElementById('integrated')
+    const dedicatedGraphics=document.getElementById('dedicated')
+    integratedGraphics.addEventListener('click',function(){
+        graphicsType='i'
+    })
+    dedicatedGraphics.addEventListener('click',function(){
+        graphicsType='d'
+    })
+
 })
 //------------------------------------------------------------------------------------------------------------------------------------
 priceBtn.addEventListener('click',function(){
     secondRowBtn.innerHTML=priceHtml
-})
-//------------------------------------------------------------------------------------------------------------------------------------
-//------------------------------------------------------------------------------------------------------------------------------------
-//--------------------------------------------------------DISPLAY CHOICES-------------------------------------------------------------
-
-
-const displayDiv=document.getElementById("display-div")
-const displayBtn=document.getElementById("display-btn")
-displayBtn.addEventListener('click',function(){
-    displayDiv.innerHTML+=`<p>${companyName}</p>`
+    const budgetInput=document.getElementById("priceInput")
+    const budgetBtn=document.getElementById("priceBtn")
+    budgetBtn.addEventListener('click',function(){
+        budget=budgetInput.value
+    })
 })
