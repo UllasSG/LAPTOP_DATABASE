@@ -1,0 +1,74 @@
+.secondbuttonclass{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+#HP,
+#MI,
+#MSI,
+#Razer,
+#Apple,
+#Acer,
+#Dell,
+#Lenovo,
+#LG,
+#ASUS,
+#i3,
+#i5,
+#i7,
+#i9,
+#R3,
+#R5,
+#R7,
+#fourGB,
+#eightGB,
+#sixteenGB,
+#thirtytwoGB,
+#thirteenIn,
+#fourteenIn,
+#sixteenIn,
+#seventeenIn,
+#integrated,
+#dedicated{
+    height: 60px;
+    width: 150px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 100px;
+    font-family: Kanit;
+    border-color: #00acacfe;
+    cursor: pointer;
+    transition: color 0.19s;
+    transition: border-color 0.19s;
+    background-color: black;
+    margin: 5px;
+}
+#priceInput{
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: solid;
+    border-color: #00acacfe;;
+    margin-right: 10px;
+    border-radius: 3px;
+}
+#priceBtn{
+    height: 55px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 100px;
+    font-family: Kanit;
+    border-color: #00acacfe;
+    cursor: pointer;
+    transition: color 0.19s;
+    transition: border-color 0.19s;
+    background-color: black;
+    
+}
+
+#display-div{
+    color: wheat;
+}
+#display-btn{
+    color: wheat;
+}

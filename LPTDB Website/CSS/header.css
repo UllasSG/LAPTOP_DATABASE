@@ -1,0 +1,39 @@
+.header{
+  background-color: rgba(0,0,0,255);
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  right: 0;
+  left: 0;
+  justify-content: center;
+  border-bottom-width: 3px;
+  border-bottom-color: #00acacfe;
+  border-bottom-style: dashed;
+}
+.logo{
+  margin-top: 10px;
+  height: 80px;
+  image-rendering: optimizeQuality;
+  object-fit: contain;
+  margin-bottom: 0px;
+}
+.hbm{
+  
+  width: 30px;
+  padding-top: 18px;
+  padding-left: 10px;
+}
+.logodiv{
+  
+  
+  width: 800;
+  
+  
+}
+.hbmdiv{
+  position: fixed;
+  left: 0;
+  top: 10px;
+  
+}

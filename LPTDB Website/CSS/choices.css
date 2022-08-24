@@ -1,0 +1,33 @@
+.choices{
+  display: flex;
+  width: 1000px;
+  
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: space-evenly;
+}
+#company-btn,
+#cpu-btn,
+#ram-btn,
+#screen-btn,
+#graphics-btn,
+#price-btn{
+  height: 60px;
+  width: 150px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 100px;
+  font-family: Kanit;
+  border-color: #00acacfe;
+  cursor: pointer;
+  transition: color 0.19s;
+  transition: border-color 0.19s;
+  background-color: black;
+}
+button:hover{
+  opacity: 0.8;
+  color: #00acacfe;
+  border-color: rgb(255, 0, 0);
+  
+}
