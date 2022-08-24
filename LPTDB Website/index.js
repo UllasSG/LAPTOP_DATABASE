@@ -79,7 +79,7 @@ companyBtn.addEventListener('click',function(){
         companyName='MSI'
     })
     MICompany.addEventListener('click',function(){
-        companyName='MI'
+        companyName='Mi '
     })
     RazerCompany.addEventListener('click',function(){
         companyName='Razer'
@@ -418,11 +418,21 @@ let data=[['HP 15 Thin & Light', 'Ryzen 3 3250U', 8, 15.6, 'i .', 35999],
 //         console.log(data[i])
 //     }
 // }
+let outputArray=[]
 const submitBtn=document.getElementById('submit-btn')
+const displayResults=document.getElementById('results')
 submitBtn.addEventListener('click',function(){
+
     for (let i=0; i<data.length ; i++){
-        if (data[i][0].indexOf(companyName)>-1 && data[i][1].indexOf(cpuName)>-1 && data[i][2]>=ramSize  && data[i][3]===screenSize ){
-            console.log(data[i])
+        if (data[i][0].indexOf(companyName)>-1 && data[i][1].indexOf(cpuName)>-1 && data[i][2]>=ramSize  && data[i][3]>=screenSize ){
+            displayResults.innerText+=JSON.stringify(data[i])
         }
     }
+    companyName=' '
+    cpuName=' '
+    ramSize=0
+    screenSize=0
+    graphicsType=' '
+    budget=1000000
 })
+
