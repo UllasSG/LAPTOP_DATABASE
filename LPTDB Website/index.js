@@ -424,7 +424,7 @@ const displayResults=document.getElementById('results')
 submitBtn.addEventListener('click',function(){
 
     for (let i=0; i<data.length ; i++){
-        if (data[i][0].indexOf(companyName)>-1 && data[i][1].indexOf(cpuName)>-1 && data[i][2]>=ramSize  && data[i][3]>=screenSize ){
+        if (data[i][0].indexOf(companyName)>-1 && data[i][1].indexOf(cpuName)>-1 && data[i][2]>=ramSize  && data[i][3]>=screenSize && data[i][4].indexOf(graphicsType)>-1 && data[i][5]<=budget){
             displayResults.innerText+=JSON.stringify(data[i])
         }
     }
