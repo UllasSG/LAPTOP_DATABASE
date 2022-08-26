@@ -133,24 +133,31 @@ cpuBtn.addEventListener('click',function(){
     const ryzenR7=document.getElementById("R7")
     inteli3.addEventListener('click',function(){
         cpuName='i3'
+        cpuChoice.innerHTML='Intel i3'
     })
     inteli5.addEventListener('click',function(){
         cpuName='i5'
+        cpuChoice.innerHTML='Intel i5'
     })
     inteli7.addEventListener('click',function(){
         cpuName='i7'
+        cpuChoice.innerHTML='Intel i7'
     })
     inteli9.addEventListener('click',function(){
         cpuName='i9'
+        cpuChoice.innerHTML='Intel i9'
     })
     ryzenR3.addEventListener('click',function(){
         cpuName='R3'
+        cpuChoice.innerHTML='Ryzen 3'
     })
     ryzenR5.addEventListener('click',function(){
         cpuName='R5'
+        cpuChoice.innerHTML='Ryzen 5'
     })
     ryzenR7.addEventListener('click',function(){
         cpuName='R7'
+        cpuChoice.innerHTML='Ryzen 7'
     })
 })
 //------------------------------------------------------------------------------------------------------------------------------------
@@ -162,15 +169,19 @@ ramBtn.addEventListener('click',function(){
     const thritytwoRam=document.getElementById('thirtytwoGB')
     fourRam.addEventListener('click',function(){
         ramSize=4
+        ramChoice.innerHTML='4 GB'
     })
     eightRam.addEventListener('click',function(){
         ramSize=8
+        ramChoice.innerHTML='8 GB'
     })
     sixteenRam.addEventListener('click',function(){
         ramSize=16
+        ramChoice.innerHTML='16 GB'
     })
     thritytwoRam.addEventListener('click',function(){
         ramSize=32
+        ramChoice.innerHTML='32 GB'
     })
 })
 
@@ -183,15 +194,19 @@ screenBtn.addEventListener('click',function(){
     const seventeenInches=document.getElementById("seventeenIn")
     thirteenInches.addEventListener('click',function(){
         screenSize=13.3
+        screenChoice.innerHTML="13.3 in"
     })
     fourteenInches.addEventListener('click',function(){
         screenSize=14
+        screenChoice.innerHTML="14 in"
     })
     sixteenInches.addEventListener('click',function(){
         screenSize=15.6
+        screenChoice.innerHTML="15.6 in"
     })
     seventeenInches.addEventListener('click',function(){
         screenSize=17.3
+        screenChoice.innerHTML="17.3 in"
     })
 })
 //------------------------------------------------------------------------------------------------------------------------------------
@@ -201,9 +216,11 @@ graphicsBtn.addEventListener('click',function(){
     const dedicatedGraphics=document.getElementById('dedicated')
     integratedGraphics.addEventListener('click',function(){
         graphicsType='i'
+        graphicsChoice.innerHTML='Integrated'
     })
     dedicatedGraphics.addEventListener('click',function(){
         graphicsType='d'
+        graphicsChoice.innerHTML='Dedicated'
     })
 
 })
@@ -214,6 +231,7 @@ priceBtn.addEventListener('click',function(){
     const budgetBtn=document.getElementById("priceBtn")
     budgetBtn.addEventListener('click',function(){
         budget=budgetInput.value
+        priceChoice.innerHTML='Rs '+budgetInput.value
     })
 })
 //------------------------------------------------------------------------------------------------------------------------------------
