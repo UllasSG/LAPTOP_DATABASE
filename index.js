@@ -1,4 +1,4 @@
-
+console.log('Hellow world')
 const companyBtn=document.getElementById('company-btn')
 const cpuBtn=document.getElementById('cpu-btn')
 const ramBtn=document.getElementById('ram-btn')
